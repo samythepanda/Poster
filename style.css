@@ -1,0 +1,45 @@
+html, body, .grid-container { height: 100%; margin: 0; 
+background-color:  #000000;
+color: white}
+
+.grid-container * { 
+ border: 1px black;
+ position: relative;
+}
+#Title{
+  color:white;
+   color: white;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 32px;
+  font-family: sans-serif;
+ 
+}
+.grid-container *:after { 
+ content:attr(class);
+ position: absolute;
+ top: 0;
+ left: 0;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "Titke Titke pic ." "Text Text Picture1 Picture-2" "Text Text Picture1 Picture-2";
+}
+
+.pic { grid-area: pic; }
+
+.Text { grid-area: Text;
+font-family: Abel;
+}
+
+.Picture1 { grid-area: Picture1;color:black; }
+
+.Picture-2 { grid-area: Picture-2; }
+
+.Titke { grid-area: Titke; }
+.main {
+  font-family: Abel;
+
+}
